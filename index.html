@@ -1,5 +1,1038 @@
-$cd crystaltippawang.github.io
-$echo "Hello World" > index.html
-$git add --all
-$git commit -m "Initial commit"
-$git push -u origin master
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+	float: center;
+}
+
+
+@font-face
+{
+font-family: "basictitlefont";
+url('../assets/basictitlefont.eot'); /* IE9 */
+src: url('../assets/basictitlefont.ttf');
+}
+
+@font-face{
+    font-familY: "Overpass";
+    src: url("../assets/overpass-regular.ttf");
+}
+
+/*Desktop*/
+@charset "UTF-8";
+@media (min-width: 1401px){
+    
+    
+text/css styles.css ( ASCII C program text )
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+	float: center;
+}
+
+
+@font-face
+{
+font-family: "basictitlefont";
+url('../assets/basictitlefont.eot'); /* IE9 */
+src: url('../assets/basictitlefont.ttf');
+}
+
+@font-face{
+    font-familY: "Overpass";
+    src: url("../assets/overpass-regular.ttf");
+}
+
+a#title{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Overpass';
+    width: 100%;
+	font-size: 120px;
+	text-align: center;
+    padding-top: 200px;
+    padding-bottom: none;
+}
+
+h2 {
+	font-family: 'Overpass';
+	font-size: 3em;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h3{
+    font-family: 'Overpass';
+	font-size: 2em;
+    color: #ffffff;
+    padding: 20px;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+    font-weight: 100;
+	font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+
+nav{
+font-family: "Overpass";
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+}
+
+nav ul li {
+font-family: "Overpass";
+	list-style-type: none;
+    display: inline-block;
+	padding: 10px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+nav ul li a{
+font-family: "Overpass";
+    color: #000000;
+	font-size: 20pt;
+	text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+
+section{
+    height: 100vh;
+}
+
+#home{
+    background-image: url("../images/bg.jpg");
+}
+
+#about{
+    background-color: #000000;
+    height: 110vh;
+}
+
+#maincontent {
+	height: 100%;
+    width: 60%;
+}
+
+#artworks{
+   background-image: url("../images/bg_artworks.jpg");
+}
+
+#slideshow-mobile {
+    display: none;
+}
+
+#slideshow-tablet {
+    display: none;
+}
+    
+#slideshow-desktop {
+    position: relative; 
+    width: 600px; 
+    height: 600px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    margin: 0 auto;
+    padding-top: 30px;
+    display: block;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#pastworks{
+    background: #000000;
+}
+
+.highschoolwork{
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+}
+
+#socialmedia {
+    background-image: url("../images/bg_socialmedia.jpg");
+}
+    
+.social{
+    display: inline-block;
+}
+    
+.socialmobile{
+    display: none;
+}
+
+
+footer {
+	font-family: 'Overpass';
+	font-size: 3em;
+	text-align: right;
+	background: #000000;
+	padding-top: 3pt;
+	padding-right: 2pt;
+	padding-left: 2pt;
+    color: #ffffff;
+}
+
+
+/*Styling other six pages (these are some common elements. For specific page style, go to that. They're not here)*/
+
+.pageheader {
+	font-size: 3em;
+	text-decoration: underline;
+	color: #75e2d9;
+	text-align: center;
+}
+
+.pagemaincontent{
+    background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+    width: 65%;
+    padding-left: 2%;
+    padding-right: 2%;
+	float: right;
+	margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+ul.contentlist {
+	font-family: 'basictitlefont';
+	font-size: 1.2em;
+	text-align: center;
+	width: 80%;
+	margin-left: 35%;
+}
+
+a {
+	color: #ffffff;
+}
+
+#freshman{
+    height: 250vh;
+    background-color: #000000;
+}
+
+#sophomore{
+   background-image: url("../images/bg_artworks.jpg");
+    height: 250vh;
+}
+
+#junior{
+    height: 450vh;
+    background-color: #000000;
+}
+
+#senior {
+    height: 150vh;
+    background-image: url("../images/bg_socialmedia.jpg");
+}
+
+/*Start Resume Styles*/
+#resumepage {
+    height: 200vh;
+    background-color: #000000;
+}
+
+#resume{
+    margin: 0 auto;
+    padding-top: 200px;
+    widows: 60%;
+}
+
+/*End Resume Styles*/
+
+/*Slideshow style*/
+
+.container{
+    margin: 0 auto;
+}
+    
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    
+a#title{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Overpass';
+    width: 100%;
+	font-size: 100px;
+	text-align: center;
+    padding-top: 200px;
+    padding-bottom: none;
+}
+
+h2 {
+	font-family: 'Overpass';
+	font-size: 2em;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h3{
+    font-family: 'Overpass';
+	font-size: 2em;
+    color: #ffffff;
+    padding: 20px;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+    font-weight: 100;
+	font-size: 1.5em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+
+nav{
+font-family: "Overpass";
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+}
+
+nav ul li {
+font-family: "Overpass";
+	list-style-type: none;
+    display: inline-block;
+	padding: 10px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+nav ul li a{
+font-family: "Overpass";
+    color: #000000;
+	font-size: 20pt;
+	text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+
+section{
+    height: 100vh;
+}
+
+#home{
+    background-image: url("../images/bg.jpg");
+    height: 100vh;
+}
+
+#about{
+    background-color: #000000;
+    height: 100vh;
+}
+
+#maincontent {
+	height: 100%;
+    width: 100%;
+    width: 100%;
+}
+
+#artworks{
+   background-image: url("../images/bg_artworks.jpg");
+}
+    
+#slideshow-mobile {
+    display: none;
+}
+
+#slideshow-tablet {
+    position: relative; 
+    width: 500px; 
+    height: 500px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    margin: 0 auto;
+    padding-top: 30px;
+    display: block;
+}
+    
+#slideshow-desktop {
+    display: none;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#pastworks{
+    background: #000000;
+    height: 100vh;
+}
+
+.highschoolwork{
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+}
+
+#socialmedia {
+    background-image: url("../images/bg_socialmedia.jpg");
+}    
+
+.social{
+    display: inline-block;
+}
+    
+.socialmobile{
+    display: none;
+}
+
+footer {
+	font-family: 'Overpass';
+	font-size: 2em;
+	text-align: right;
+	background: #000000;
+	padding-top: 3pt;
+	padding-right: 2pt;
+	padding-left: 2pt;
+    color: #ffffff;
+}
+
+
+/*Styling other six pages (these are some common elements. For specific page style, go to that. They're not here)*/
+
+.pageheader {
+	font-size: 3em;
+	text-decoration: underline;
+	color: #75e2d9;
+	text-align: center;
+}
+
+.pagemaincontent{
+    background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+    width: 65%;
+    padding-left: 2%;
+    padding-right: 2%;
+	float: right;
+	margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+ul.contentlist {
+	font-family: 'basictitlefont';
+	font-size: 1.2em;
+	text-align: center;
+	width: 80%;
+	margin-left: 35%;
+}
+
+a {
+	color: #ffffff;
+}
+
+#freshman{
+    height: 250vh;
+    background-color: #000000;
+}
+
+#sophomore{
+   background-image: url("../images/bg_artworks.jpg");
+    height: 250vh;
+}
+
+#junior{
+    height: 450vh;
+    background-color: #000000;
+}
+
+#senior {
+    height: 150vh;
+    background-image: url("../images/bg_socialmedia.jpg");
+}
+
+/*Start Resume Styles*/
+#resumepage {
+    height: 200vh;
+    background-color: #000000;
+}
+
+#resume{
+    margin: 0 auto;
+    padding-top: 200px;
+    width: 60%;
+}
+
+/*End Resume Styles*/
+
+/*Slideshow style*/
+
+.container{
+    margin: 0 auto;
+}
+    
+}
+
+@media (min-width: 451px) and (max-width: 1200px) {
+    
+a#title{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Overpass';
+    width: 100%;
+	font-size: 60px;
+	text-align: center;
+    padding-top: 200px;
+    padding-bottom: none;
+}
+
+h2 {
+	font-family: 'Overpass';
+	font-size: 2em;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h3{
+    font-family: 'Overpass';
+	font-size: 2em;
+    color: #ffffff;
+    padding: 20px;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+    font-weight: 100;
+	font-size: 1.5em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+
+nav{
+font-family: "Overpass";
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+}
+
+nav ul li {
+font-family: "Overpass";
+	list-style-type: none;
+    display: inline-block;
+	padding: 10px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+nav ul li a{
+font-family: "Overpass";
+    color: #000000;
+	font-size: 20pt;
+	text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+
+section{
+    height: 100vh;
+}
+
+#home{
+    background-image: url("../images/bg-tablet.jpg");
+    height: 100vh;
+}
+
+#about{
+    background-color: #000000;
+    height: 150vh;
+}
+
+#maincontent {
+	height: 100%;
+    width: 100%;
+    width: 100%;
+}
+
+#artworks{
+   background-image: url("../images/bg_artworks.jpg");
+}
+    
+#slideshow-mobile {
+    display: none;
+}
+
+#slideshow-tablet {
+    position: relative; 
+    width: 500px; 
+    height: 500px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    margin: 0 auto;
+    padding-top: 30px;
+    display: block;
+}
+    
+#slideshow-desktop {
+    display: none;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#pastworks{
+    background: #000000;
+    height: 150vh;
+}
+
+.highschoolwork{
+    width: 100%;
+    display: inline-block;
+    margin: 20px;
+}
+
+#socialmedia {
+    background-image: url("../images/bg_socialmedia.jpg");
+    height: 200vh;
+}
+    
+.social{
+    display: block;
+    margin: 0 auto;
+}
+    
+.socialmobile{
+    display: none;
+}
+
+
+footer {
+	font-family: 'Overpass';
+	font-size: 2em;
+	text-align: right;
+	background: #000000;
+	padding-top: 3pt;
+	padding-right: 2pt;
+	padding-left: 2pt;
+    color: #ffffff;
+}
+
+
+/*Styling other six pages (these are some common elements. For specific page style, go to that. They're not here)*/
+
+.pageheader {
+	font-size: 3em;
+	text-decoration: underline;
+	color: #75e2d9;
+	text-align: center;
+}
+
+.pagemaincontent{
+    background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+    width: 65%;
+    padding-left: 2%;
+    padding-right: 2%;
+	float: right;
+	margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+ul.contentlist {
+	font-family: 'basictitlefont';
+	font-size: 1.2em;
+	text-align: center;
+	width: 80%;
+	margin-left: 35%;
+}
+
+a {
+	color: #ffffff;
+}
+
+#freshman{
+    height: 250vh;
+    background-color: #000000;
+}
+
+#sophomore{
+   background-image: url("../images/bg_artworks.jpg");
+    height: 250vh;
+}
+
+#junior{
+    height: 450vh;
+    background-color: #000000;
+}
+
+#senior {
+    height: 150vh;
+    background-image: url("../images/bg_socialmedia.jpg");
+}
+
+/*Start Resume Styles*/
+#resumepage {
+    height: 200vh;
+    background-color: #000000;
+}
+
+#resume{
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+/*End Resume Styles*/
+
+/*Slideshow style*/
+
+.container{
+    margin: 0 auto;
+}
+    
+}
+
+
+@charset "UTF-8";
+@media (max-width: 450px) { /*Mobile Styles-----------------------------------------------------------------*/
+a#title{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Overpass';
+    width: 100%;
+	font-size: 60px;
+	text-align: center;
+    padding-top: 200px;
+    padding-bottom: none;
+}
+
+h2 {
+	font-family: 'Overpass';
+	font-size: 2em;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h3{
+    font-family: 'Overpass';
+	font-size: 1.7em;
+    color: #ffffff;
+    padding: 20px;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+    font-weight: 100;
+	font-size: 1.5em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+
+nav{
+font-family: "Overpass";
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+}
+
+nav ul li {
+font-family: "Overpass";
+	list-style-type: none;
+    display: inline-block;
+	padding: 10px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+nav ul li a{
+font-family: "Overpass";
+    color: #000000;
+	font-size: 20pt;
+	text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+
+section{
+    height: 100vh;
+}
+
+#home{
+    background-image: url("../images/bg-mobile.jpg");
+    height: 100vh;
+}
+
+#about{
+    background-color: #000000;
+    height: 170vh;
+}
+
+#maincontent {
+	height: 100%;
+    width: 100%;
+    width: 100%;
+}
+
+#artworks{
+   background-image: url("../images/bg_artworks.jpg");
+}
+
+#slideshow-mobile {
+    position: relative; 
+    width: 300px; 
+    height: 300px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    margin: 0 auto;
+    padding-top: 20px;
+    display: block;
+}
+    
+#slideshow-tablet {
+    display: none;
+}
+    
+#slideshow-desktop {
+    display: none;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#pastworks{
+    background: #000000;
+    height: 200vh;
+}
+
+.highschoolwork{
+    width: 100%;
+    display: inline-block;
+    margin: 20px;
+}
+    
+.social{
+    display: none;
+}
+    
+.socialmobile{
+    display: block;
+    margin: 0 auto;
+}
+
+#socialmedia {
+    background-image: url("../images/bg_socialmedia.jpg");
+    height: 150vh;
+}
+
+
+footer {
+	font-family: 'Overpass';
+	font-size: 1.5em;
+	text-align: right;
+	background: #000000;
+	padding-top: 3pt;
+	padding-right: 2pt;
+	padding-left: 2pt;
+    color: #ffffff;
+}
+
+
+/*Styling other six pages (these are some common elements. For specific page style, go to that. They're not here)*/
+
+.pageheader {
+	font-size: 3em;
+	text-decoration: underline;
+	color: #75e2d9;
+	text-align: center;
+}
+
+.pagemaincontent{
+    background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+    width: 65%;
+    padding-left: 2%;
+    padding-right: 2%;
+	float: right;
+	margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+ul.contentlist {
+	font-family: 'basictitlefont';
+	font-size: 1.2em;
+	text-align: center;
+	width: 80%;
+	margin-left: 35%;
+}
+
+a {
+	color: #ffffff;
+}
+
+#freshman{
+    height: 250vh;
+    background-color: #000000;
+}
+
+#sophomore{
+   background-image: url("../images/bg_artworks.jpg");
+    height: 250vh;
+}
+
+#junior{
+    height: 450vh;
+    background-color: #000000;
+}
+
+#senior {
+    height: 150vh;
+    background-image: url("../images/bg_socialmedia.jpg");
+}
+
+/*Start Resume Styles*/
+#resumepage {
+    height: 200vh;
+    background-color: #000000;
+}
+
+#resume{
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+/*End Resume Styles*/
+
+/*Slideshow style*/
+
+.container{
+    margin: 0 auto;
+}
+
+    
+}
