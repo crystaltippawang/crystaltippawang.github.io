@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="css/styles.css" media="screen">
+        <script src="./js/jquery-1.11.1.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="js/clearbox.js" type="text/javascript"></script>
+        
+        
+        
+        
+        <script>
+        
+        $(document).ready(function() {
+    function close_accordion_section() {
+        $('.accordion .accordion-section-title').removeClass('active');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+ 
+    $('.accordion-section-title').click(function(e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+ 
+        if($(e.target).is('.active')) {
+            close_accordion_section();
+        }else {
+            close_accordion_section();
+ 
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+        }
+ 
+        e.preventDefault();
+    });
+});
+        
+        </script>        
+
+        <title>Unite US - Home</title>
+        
+    <!--Script for clearbox-->
+        
+    <script type="text/xml">
+<!--
+<oa:widgets>
+  <oa:widget wid="2648024" binding="#OAWidget" />
+</oa:widgets>
+-->
+    </script>
+    
+</head>
+    
+    
+    <body>
+
+        
+        <div id="banner">
+		  <script type="text/javascript">
+// BeginOAWidget_Instance_2648024: #OAWidget
+/*
+      // 	ClearBox Config File (JavaScript)
+      */
+      
+      var
+      
+      // CB layout:
+      
+      CB_MinWidth=300,				// minimum (only at images) or initial width of CB window
+      CB_MinHeight=300,				// initial heigth of CB window
+      CB_WinPadd=15,					// padding of the CB window from sides of the browser 
+      CB_ImgBorder=3,					// border size around the picture in CB window
+      CB_ImgBorderColor='#FFF',			// border color around the picture in CB window
+      CB_Padd=4,					// padding around inside the CB window
+      
+      CB_BodyMarginLeft=0,				//
+      CB_BodyMarginRight=0,				// if you set margin to <body>,
+      CB_BodyMarginTop=0,				// please change these settings!
+      CB_BodyMarginBottom=0,				//
+      
+      CB_ShowThumbnails='auto',			// it tells CB how to show the thumbnails ('auto', 'always' or 'off') thumbnails are only in picture-mode!
+      CB_ThumbsBGColor='#000',			// color of the thumbnail layer
+      CB_ThumbsBGOpacity=.35,				// opacity of the thumbnail layer
+      CB_ActThumbOpacity=.65,				// thumbnail opacity of the current viewed image
+      
+      CB_SlideShowBarColor='#FFF',			// color of the slideshow bar
+      CB_SlideShowBarOpacity=.60,			// opacity of the slideshow bar
+      CB_SlideShowBarPadd=17,				// padding of the slideshow bar (left and right)
+      CB_SlideShowBarTop=2,				// position of the slideshow bar from the top of the picture
+      
+      CB_SimpleDesign='off',				// if it's 'on', CB doesn't show the frame but only the content - really nice ;)
+      
+      CB_CloseBtnTop=-10,				// vertical position of the close button in picture mode
+      CB_CloseBtnRight=-14,				// horizontal position of the close button in picture mode
+      CB_CloseBtn2Top=-20,				// vertical position of the close button in content mode
+      CB_CloseBtn2Right=-30,				// horizontal position of the close button in content mode
+      
+      CB_OSD='off',					// turns on OSD
+      CB_OSDShowReady='off',				// when clearbox is loaded and ready, it shows an OSD message
+      
+      // CB font, text and navigation (at the bottom of CB window) settings:
+      
+      CB_FontT='Verdana',				//
+      CB_FontSizeT=13,				// these variables are referring to the title or caption line
+      CB_FontColorT='#777',				// 
+      CB_FontWeightT='normal',			//
+      
+      CB_FontC='arial',				//
+      CB_FontSizeC=11,				// these variables are referring to
+      CB_FontColorC='#999',				// comment lines under the title
+      CB_FontWeightC='normal',			//
+      CB_TextAlignC='justify',			//
+      CB_txtHCMax=120,				// maximum height of the comment box in pixels
+      
+      CB_FontG='arial',				//
+      CB_FontSizeG=11,				// these variables are referring to the gallery name
+      CB_FontColorG='normal',				//
+      CB_FontWeightG='@@CB_FontWeightG@@',			//
+      
+      CB_PadT=10,					// space in pixels between the content and the title or caption line
+      
+      CB_OuterNavigation='off',			// turns outer navigation panel on
+      
+      CB_ShowURL='off',				// it shows the url of the content if no title or caption is given
+      CB_ItemNum='on',				// it shows the ordinal number of the content in galleries
+      CB_ItemNumBracket='()',				// whatever you want ;)
+      
+      CB_ShowGalName='',				// it shows gallery name
+      CB_TextNav='on',				// it shows previous and next navigation
+      CB_NavTextImgPrvNxt='on',			// it shows previous and next buttons instead of text
+      CB_ShowDL='on',					// it shows download controls
+      CB_NavTextImgDL='on',				// it shows download buttons instead of text
+      
+      CB_ImgRotation='on',				// it shows the image rotation controls
+      CB_NavTextImgRot='on',				// it shows the image rotation buttons instead of text
+      
+      // Settings of the document-hiding layer:
+      
+      CB_HideColor='#000',				// color of the layer
+      CB_HideOpacity=.8,				// opacity (0 is invisible, 1 is 100% color) of the layer
+      CB_HideOpacitySpeed=400,			// speed of fading
+      CB_CloseOnH='on',				// CB will close, if you click on background
+      
+      // CB animation settings:
+      CB_Animation='double',				// 'double', 'normal', 'off', 'grow', 'growinout' or 'warp' (high cpu usage)
+      CB_ImgOpacitySpeed=300,				// speed of content fading (in ms)
+      CB_TextOpacitySpeed=300,			// speed of text fading under the picture (in ms)
+      CB_AnimSpeed=300,				// speed of the resizing animation of CB window (in ms)
+      CB_ImgTextFade='on',				// turns on or off the fading of content and text
+      CB_FlashHide='on',				// it hides flash animations on the page before CB starts
+      CB_SelectsHide='on',				// it hides select boxes on the page before CB starts
+      CB_SlShowTime=3000,				// default speed of the slideshow (in sec)
+      CB_Preload='on',				// preload neighbour pictures in galleries
+      CB_ShowLoading='on'				// 
+      
+      
+      
+      ;
+// EndOAWidget_Instance_2648024
+            </script>
+        
+    </head>
+    
+    <body>
+        
+        <section id="home">
+                        
+            <h1>UNITE US</h1>
+                        
+                <nav>
+                        
+                    <ul>
+                            
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#map">MAP</a></li>
+                        <li><a href="#activities">ACTIVITIES</a></li>
+                        <li><a href="#gallery">GALLERY</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        
+                    </ul>
+                    
+                </nav>
+
+            </section>
+            
+        <div id="wrapper">
+
+            <section id="about">
+                            
+                <a href="#home"><img src="images/button_up.png" class="updown" /></a>
+                <a href="#map"><img src="images/button_down.png" class="updown" /></a>
+    
+                    <h2>ABOUT US</h2>
+                        
+                <p id="aboutcontent">Unite US is a website that aims to target and educate fifth graders in United States geography. All throughout elementary school, different parts of social studies have been presented as a foundation for students heading into middle school. Students will use an interactive map to learn about the differences between the states, and how all together they make one strong nation: the United States. Along with the map, we also have additional fun activities that will help support what they learned. </p>
+                <p>TO NAVIGATE THE SITE, please click the arrows by the top left of the page to go up or down.</p>
+                
+            </section>
+                 
+                    <section id="map">
+                        
+                        <a href="#about"><img src="images/button_up.png" class="updown" /></a>
+                        
+                        <a href="#activities"><img src="images/button_down.png" class="updown" /></a>
+                        
+                            <h2>MAP</h2>  
+                        
+                                <div id="desktopmap">
+                                    
+                                    <img src="images/usmap_desktop.png" alt="Regions" width="700" height="500" usemap="#Map2">
+<map name="Map2">
+  <area shape="poly" coords="237,258" href="#">
+  <area shape="poly" coords="234,257,358,270,360,219,341,215,350,111,9,55,4,261,215,307" href="west.html">
+  <area shape="poly" coords="433,269,442,319,448,367,409,393,406,416,218,313,233,259,432,269" href="southwest.html">
+  <area shape="poly" coords="574,195" href="#">
+  <area shape="poly" coords="572,196,534,90,352,110,342,213,358,218,361,263,431,269,439,277,492,277,566,239,576,221" href="midwest.html">
+  <area shape="poly" coords="448,365" href="#">
+  <area shape="poly" coords="450,367" href="southeast.html" alt="southeast">
+  <area shape="poly" coords="452,366" href="#">
+  <area shape="poly" coords="448,367,599,427,656,265,604,221,578,221,491,276,436,277" href="southeast.html" alt="southeast">
+  <area shape="poly" coords="574,194,580,219,601,219,630,238,696,129,672,80,573,191" href="northeast.html" alt="northeast">
+</map>
+            
+</div>
+    
+<div id="tabletmap">
+        <img src="images/usmap_tablet.png" alt="Regions" width="500" height="400" usemap="#Map3">
+<map name="Map3">
+  <area shape="poly" coords="168,212,256,222,258,184,244,183,251,107,5,64,16,236,155,249" href="west.html" alt="west">
+  <area shape="poly" coords="253,107" href="#">
+  <area shape="poly" coords="251,108,244,182,258,184,256,220,310,222,313,227,352,225,362,210,382,199,403,201,413,185,410,168,352,97" href="midwest.html" alt="midwest">
+  <area shape="poly" coords="309,223,169,213,155,250,290,345,319,292" href="southwest.html" alt="southwest">
+  <area shape="poly" coords="313,228" href="#">
+  <area shape="poly" coords="314,228,414,188" href="#">
+  <area shape="poly" coords="429,185" href="#">
+  <area shape="poly" coords="414,188" href="#">
+  <area shape="poly" coords="412,189" href="#">
+  <area shape="poly" coords="432,186,476,223,454,338,322,294,314,231" href="southeast.html" alt="southeast">
+  <area shape="poly" coords="407,154,480,91,499,132,469,205,414,185" href="northeast.html" alt="northeast">
+</map>
+    
+    </div>
+
+<div id="mobilemap">
+<img src="images/usmap_mobile_portrait.png" alt="Regions" width="300" height="180" usemap="#Map4">
+<map name="Map4">
+  <area shape="poly" coords="100,90,152,96,153,74,145,73,149,29,3,10,11,120,91,113" href="west.html" alt="west">
+  <area shape="poly" coords="92,114,101,91,185,98,196,169,145,153" href="southwest.html" alt="southwest">
+  <area shape="poly" coords="149,29,145,72,152,73,153,94,209,98,228,83,241,81,249,47,184,22" href="midwest.html" alt="midwest">
+  <area shape="poly" coords="193,138,260,163,287,92,255,75,188,104" href="southeast.html" alt="southeast">
+  <area shape="poly" coords="244,75,253,27,295,9,298,63,278,84" href="northeast.html" alt="northeast">
+    
+</map>
+        
+    </div>
+
+
+      <p>Click on a region to learn more about each state!</p>                  
+                        
+                    </section>
+                    
+            
+                                       
+                                        
+                                        <section id="activities">
+                                            <a href="#map"><img src="images/button_up.png" class="updown" /></a>
+                                            <a href="#gallery"><img src="images/button_down.png" class="updown" /></a>
+                                                <h2>ACTIVITIES</h2>
+                                            
+                        <div id="threeactivities">
+    
+		<section class="sectionarray">
+            <img class="icons" src="images/icon_quiz.png" />
+			<h3>Quizzes</h3>
+			<p>Test your knowledge to see if you’re able to retain all your information!</p>
+            <a href="quiz1.html" class="button" target="_blank">Start Quiz</a>
+		</section>
+
+    		<section class="sectionarray">
+                <img class="icons" src="images/icon_coloring.png" />
+			<h3>Coloring Pages</h3>
+			<p>Use your creativity to bring the places of the country to life.</p>
+    <div id="gallerydesktop">
+                
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/color_oregongrape.jpg" title="Death Valley, CA"><img src="images/color_oregongrape.jpg" alt="Sabina Canyon, AZ" width="80px" height="80px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/color_nm_alien.jpg" title="Death Valley, CA"><img src="images/color_nm_alien.jpg" alt="Sabina Canyon, AZ" width="80px" height="80px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/color_west.jpg" title="Scotty Castle"><img src="images/color_west.jpg" alt="Sabina Canyon, AZ" width="80px" height="80px" class="border" /></a>
+        </div>
+    
+                
+                <div id="gallerymobile">
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/color_oregongrape.jpg" title="Death Valley, CA"><img src="images/color_oregongrape.jpg" alt="Sabina Canyon, AZ" width="70px" height="70px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/color_nm_alien.jpg" title="Death Valley, CA"><img src="images/color_nm_alien.jpg" alt="Sabina Canyon, AZ" width="70px" height="70px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/color_west.jpg" title="Scotty Castle"><img src="images/color_west.jpg" alt="Sabina Canyon, AZ" width="70px" height="70px" class="border" /></a>
+
+</div>
+         
+        </section>
+    
+		<section class="sectionarray">
+            <img class="icons" src="images/icon_wordsearch.png" />
+			<h3>Word Search</h3>
+			<p>Use your creativity to bring the places of the country to life.</p>
+            <a href="wordsearch1.pdf" class="button" target="_blank">Show Wordsearch</a>
+		</section>
+        </div>
+                        
+                     
+                    </section>
+                                        
+                    <section id="gallery">
+                        
+                        <a href="#activities"><img src="images/button_up.png" class="updown" /></a>
+                        <a href="#contact"><img src="images/button_down.png" class="updown" /></a>
+    
+                            <h2>GALLERY</h2>
+                        
+                                <div id="content">
+
+<div id="gallerydesktop">
+    
+    <p>This is a gallery of photos from all over the United States. The photos range from landscapes to people in action.
+    We want to provide an all-access look inside the different and hidden parts of the United States. No need to book a flight! 
+    Just go through our photo gallery.</p>
+    
+    <p>Photo Courtesy: Mary Ann Roseler</p>
+    
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/artist.jpg" title="Local artist in Kansas"><img class="border" src="images/artist_preview.jpg" alt="" width="200px" height="200px"/></a>
+    
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/az_tucson_sabinacanyon.jpg" title="Sabina Canyon, AZ"><img src="images/az_tucson_sabinacanyon_preview.jpg" alt="Sabina Canyon, AZ" width="200px" height="200px" class="border" /></a>
+
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/bargetraffic.jpg" title="Barget Traffic, La Crosse"><img src="images/bargetraffic_preview.jpg" alt="Sabina Canyon, AZ" width="200px" height="200px" class="border" /></a>
+
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/biker.jpg" title="Local Biker in Wisconsin"><img src="images/biker_preview.jpg" alt="Biker" width="200px" height="200px" class="border" /></a>
+    
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/birdwatcher.jpg" title="Bird Watcher"><img src="images/birdwatcher_preview.jpg" alt="Bird Watcher, in Arizona" width="200px" height="200px" class="border" /></a>
+    
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/bluffFarmRoad.jpg" title="Bluff Farm Road, Wisconsin"><img src="images/bluffFarmRoad_preview.jpg" alt="Sabina Canyon, AZ" width="200px" height="200px" class="border" /></a>
+    
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/boatLakeMichigan.jpg" title="Boat Lake Michigan"><img src="images/boatLakeMichigan_preview.jpg" alt="Sabina Canyon, AZ" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/bryce.jpg" title="Bryce Canyon, in Utah"><img src="images/bryce_preview.jpg" alt="Bryce Canyon" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/ca_deathvalley.jpg" title="Death Valley, CA"><img src="images/ca_deathvalley_preview.jpg" alt="Sabina Canyon, AZ" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/ca_deathvalley2.jpg" title="Death Valley, CA"><img src="images/ca_deathvalley2_preview.jpg" alt="Sabina Canyon, AZ" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/ca_scottycastle.jpg" title="Scotty Castle in California"><img src="images/ca_scottycastle_preview.jpg" alt="Sabina Canyon, AZ" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/co_golden.jpg" title="Colorado"><img src="images/co_golden_preview.jpg" alt="Colorado" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/co_mtnPasture.jpg" title="Colorado"><img src="images/co_mtnPasture_preview.jpg" alt="Sabina Canyon, AZ" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/cottagesteps.jpg" title="Cottage Steps, Washington"><img src="images/cottagesteps_preview.jpg" alt="Sabina Canyon, AZ" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/cowboy.jpg" title="Local Cowboy in California. Near Death Valley."><img src="images/cowboy_preview.jpg" alt="Cowboy" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/dome.jpg" title="Dome, Las Vegas"><img src="images/dome_preview.jpg" alt="Dome" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/drumcorp.jpg" title="Marching Band in Minnesota"><img src="images/drumcorp_preview.jpg" alt="Drum Corp" width="200px" height="200px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/entertainers.jpg" title="Performers in Philadelphia"><img src="images/entertainers_preview.jpg" alt="Entertainers" width="200px" height="200px" class="border" /></a>
+</div>
+                                    
+<div id="gallerymobile">
+    
+    <p>This is a gallery of photos from all over the United States. The photos range from landscapes to people in action.
+    We want to provide an all-access look inside the different and hidden parts of the United States. No need to book a flight! 
+    Just go through our photo gallery.</p>
+    
+    <p>Photo Courtesy: Mary Ann Roseler</p>
+    
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/artist.jpg" title="Artist"><img class="border" src="images/artist_preview.jpg" alt="" width="100px" height="100px"/></a>
+    
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/az_tucson_sabinacanyon.jpg" title="Sabina Canyon, AZ"><img src="images/az_tucson_sabinacanyon_preview.jpg" alt="Sabina Canyon, AZ" width="100px" height="100px" class="border" /></a>
+
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/bargetraffic.jpg" title="Barget Traffic"><img src="images/bargetraffic_preview.jpg" alt="Sabina Canyon, AZ" width="100px" height="100px" class="border" /></a>
+
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/biker.jpg" title="Biker"><img src="images/biker_preview.jpg" alt="Biker" width="100px" height="100px" class="border" /></a>
+    
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/birdwatcher.jpg" title="Bird Watcher"><img src="images/birdwatcher_preview.jpg" alt="Bird Watcher" width="100px" height="100px" class="border" /></a>
+    
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/bluffFarmRoad.jpg" title="Bluff Farm Road"><img src="images/bluffFarmRoad_preview.jpg" alt="Sabina Canyon, AZ" width="100px" height="100px" class="border" /></a>
+    
+<a rel="clearbox[gallery=Gallery,,comment=]" href="images/boatLakeMichigan.jpg" title="Boat Lake Michigan"><img src="images/boatLakeMichigan_preview.jpg" alt="Sabina Canyon, AZ" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/bryce.jpg" title="Bryce Canyon"><img src="images/bryce_preview.jpg" alt="Bryce Canyon" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/ca_deathvalley.jpg" title="Death Valley, CA"><img src="images/ca_deathvalley_preview.jpg" alt="Sabina Canyon, AZ" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/ca_deathvalley2.jpg" title="Death Valley, CA"><img src="images/ca_deathvalley2_preview.jpg" alt="Sabina Canyon, AZ" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/ca_scottycastle.jpg" title="Scotty Castle"><img src="images/ca_scottycastle_preview.jpg" alt="Sabina Canyon, AZ" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/co_golden.jpg" title="Colorado"><img src="images/co_golden_preview.jpg" alt="Colorado" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/co_mtnPasture.jpg" title="Colorado"><img src="images/co_mtnPasture_preview.jpg" alt="Sabina Canyon, AZ" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/cottagesteps.jpg" title="Cottage Steps"><img src="images/cottagesteps_preview.jpg" alt="Sabina Canyon, AZ" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/cowboy.jpg" title="Cowboy"><img src="images/cowboy_preview.jpg" alt="Cowboy" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/dome.jpg" title="Dome"><img src="images/dome_preview.jpg" alt="Dome" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/drumcorp.jpg" title="Dome"><img src="images/drumcorp_preview.jpg" alt="Drum Corp" width="100px" height="100px" class="border" /></a>
+    
+    <a rel="clearbox[gallery=Gallery,,comment=]" href="images/entertainers.jpg" title="Dome"><img src="images/entertainers_preview.jpg" alt="Entertainers" width="100px" height="100px" class="border" /></a>
+</div>
+    
+</div>
+                    </section>
+                    
+                    <section id="contact">
+                        <a href="#gallery"><img src="images/button_up.png" class="updown" /></a>
+                        <h2>Contact</h2>
+     <h3> We would love to hear and see from you! If you have any photos you'd like to share for us to put on our gallery page, please feel free to contact us. </h3>
+                        
+                        <div id="form">
+            
+                <form name="htmlform" method="post" action="html_form_send.php">
+<table width="450px">
+</tr>
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+ 
+<tr>
+ <td valign="top">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+ 
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+ 
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   ( <a href="http://www.freecontactform.com/html_form.php">HTML Form</a> )
+ </td>
+</tr>
+</table>
+</form>
+                        
+                        </div>
+                                        
+                    </section>
+        
+<footer>
+
+
+    
+    <p id="copyright">®Crystal Tippawang and Sabriya Said 2015</p>
+        
+</footer>
+                    
+            </div> <!--end wrapper-->
+        
+    </body>
+    
+    <script>
+        // Creates canvas 320 × 200 at 10, 50
+var paper = Raphael(10, 50, 320, 200);
+
+// Creates circle at x = 50, y = 40, with radius 10
+var circle = paper.circle(50, 40, 10);
+// Sets the fill attribute of the circle to red (#f00)
+circle.attr("fill", "#f00");
+
+// Sets the stroke attribute of the circle to white
+circle.attr("stroke", "#fff");</script>
+    
+</html>
+

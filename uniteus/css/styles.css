@@ -1,0 +1,5065 @@
+
+text/css styles.css ( ASCII C program text )
+
+/*Colour Scheme:
+Main teal: #5c7071;*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+#wrapper{
+    margin: 0 auto;
+    max-width: 1900px;
+}
+
+@font-face {
+font-family: "Aileron-Ultralight";
+src: url('../assets/Aileron-Ultralight.otf');
+}
+
+@font-face {
+font-family: "Aileron-SemiBold";
+src: url('../assets/Aileron-SemiBold.otf');
+}
+
+@font-face {
+font-family: "Aileron-Regular";
+src: url('../assets/Aileron-Regular.otf');
+}
+
+/*Desktop*/
+@charset "UTF-8";
+@media (min-width: 1301px){
+
+h1 {
+    font-family: "Aileron-SemiBold";
+
+    font-weight: 300;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: none;
+	font-size: 180pt;
+	text-align: center;
+    text-shadow: 7px 8px 9px #333;
+    filter: drop-shadow(color=#333, offx=2px, offy=2px);
+}
+  
+
+
+p {
+	font-family: "Aileron-Ultralight";
+    
+    /*background: rgba(170, 203, 203, 0.35);*/
+    color: #ffffff;
+    font-weight: 100;
+	font-size: 2em;
+    margin: 0 auto;
+    width: 80%;
+}
+
+nav{
+font-family: "Aileron-Regular";
+    color: #5c7071;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    padding-top: 20px;
+}
+
+nav ul li {
+font-family: "Aileron-Regular";
+	list-style-type: none;
+    display: inline-block;
+	padding: 6px;
+    color: #5c7071;
+    margin: 0 auto;
+}
+
+nav ul li a{
+font-family: "Aileron-Regular";
+    color: #000000;
+	font-size: 30pt;
+	text-decoration: none;
+    display: inline-block;
+    color: #83e8fa;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+
+a{
+font-family: "Aileron-Regular";
+    color: #5c7071;
+    text-decoration: none;
+    z-index: 100;
+}
+
+a:active{
+    color: #83e8fa;
+}
+
+a:visited{
+    color: #83e8fa;   
+}
+    
+.updown{
+    padding: 5px;
+    float: left;
+}
+    
+/*Begin Home Page      url("../images/main_background.jpg")       */
+
+section{
+    padding: 0px;
+    margin: 0;
+}
+
+#home{
+   background-image: url("../images/background_main.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+/* End Home Page */
+
+/*Begin About Page */
+
+#about {
+    background-image: url("../images/background_about.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+#aboutcontent{
+    text-align: center;
+}
+
+/*End About Page*/
+
+
+/*Begin Map Page */
+#map {
+    background-image: url("../images/background_map.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    text-align:center;
+}
+    
+.outline{
+    display: block;
+    float: left;
+}
+    
+.mobileoutline{
+    display: none;
+    float: left;
+}
+
+#tabletmap{
+    margin-left:auto;
+    margin-right:auto;
+    display: none;
+}
+    
+#desktopmap{
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+}
+    
+#mobilemap{
+    margin-left:auto;
+    margin-right:auto;
+    display: none;
+}
+ 
+
+div#aboutcontent{
+    text-align: center;
+}
+
+/*End Map Page*/
+
+
+/*Begin Activities Page */
+
+#activities {
+    background-image: url("../images/background_activities.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+#threeactivities{
+}
+
+.sectionarray {
+    width: 30%;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+    
+p.sectionarray{
+    padding-bottom: 30px;
+    display: block;
+}
+    
+.icons{
+    margin: 0 auto;
+}
+
+/*.button {
+    border: solid 1px #20538D;
+    background: #4479BA;
+    color: #FFF;
+    padding: 30px 45px;
+    text-decoration: none;
+}*/
+    
+a.button {
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+    margin-left: -50px;
+    color:#5c7071;
+    text-decoration:none;
+    background: -webkit-linear-gradient(#d6ff79, #c3ff63);
+    background: -webkit-linear-gradient(#d6ff79, #c3ff63); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d6ff79, #c3ff63); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d6ff79, #c3ff63); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d6ff79, #c3ff63); /* Standard syntax */
+}
+        
+     
+    
+    
+#quiz1 {
+    background-image: url("../images/background_activities.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.question{
+    color: black;   
+}
+
+div#aboutcontent{
+    text-align: center;
+}
+
+/*End activities Page*/
+
+
+/*Begin Gallery Page */
+
+#gallery {
+    background-image: url("../images/gallery_background.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 150vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+div#gallerydesktop{
+    display: block;
+    text-align: center;
+}
+    
+div#gallerymobile{
+    display: none; 
+    text-align: center;
+}
+
+div#aboutcontent{
+    text-align: center;
+}
+
+/*End gallery Page*/
+
+/*Begin Contact Page*/
+
+#contact{
+    background-image: url("../images/background_contact.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+table {
+	font-family: "Aileron-Ultralight";
+
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+
+h3{
+	font-family: "Aileron-Ultralight";
+
+    font-weight: 200;
+    font-size: 5vh;
+    text-align: center;
+    color: #5c7071;
+}
+
+#contactBlock{
+	font-family: "Aileron-Ultralight";
+
+    text-align: center;
+    float: right;
+}
+
+#htmlform{
+    font-family: "Aileron-Ultralight";
+
+    text-align: center;
+    float: right;
+}
+
+#textfield{
+    float: right;
+    font-family: "Aileron-Ultralight";
+
+}
+
+label{
+font-family: "Aileron-Ultralight";
+}
+
+section p {
+    padding: 10px;
+}
+
+#test {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+    
+/*States Styles*/
+    
+/*West Styles*/
+
+#west{
+   background-image: url("../images/background_about.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+
+    
+h1{
+    margin: 0px;   
+}
+
+.states{
+    background: #333333;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.states ul{
+	font-family: "Aileron-Ultralight";
+    font-weight: 300;
+	list-style-type: none;
+	padding:6px;
+    color: #3e3e3e;
+    margin: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 25px;
+}
+
+.states ul li{
+	font-family: "Aileron-Ultralight";
+    font-weight: 300;
+	list-style-type: none;
+	padding:6px;
+    color: #3e3e3e;
+    margin: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 25px;
+}
+    
+.statenav{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+    
+#nevada{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#california{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#oregon{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#idaho{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#utah{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#colorado{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#wyoming{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#washington{
+   background-image: url("../images/background_washington.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#montana{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#hawaii{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#alaska{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+        
+/*Midwest Styles*/
+    
+#northdakota{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#southdakota{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#nebraska{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#kansas{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#minnesota{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#iowa{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#missouri{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#wisconsin{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#illinois{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#michigan{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#indiana{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#ohio{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*northeast styles*/
+    
+#newhampshire{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#maine{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#vermont{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newyork{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#massachusetts{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#rhodeisland{
+   background-image: url("../images/background_washington.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#connecticut{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newjersey{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#pennsylvania{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#maryland{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#delaware{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*southeast styles*/
+    
+#westvirginia{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#virginia{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#northcarolina{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#southcarolina{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#delaware{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#kentucky{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#tennessee{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#florida{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#alabama{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#georgia{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#mississippi{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#louisiana{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#arkansas{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*southwest*/
+    
+#arizona{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#oklahoma{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#texas{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newmexico{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+h2 {
+font-family: "Aileron-Regular";
+    font-weight: 200;
+    font-size: 8vh;
+    text-align: center;
+    color: #83e8fa;
+    padding-bottom: 2%;
+    padding-top: 7%;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+    
+/*footer styles*/
+    
+footer{
+    background: #b2f56f;
+    height: 40vh;
+    font-family: "Aileron-Ultralight";
+    color: white;
+}
+    
+#copyright{
+    text-align: right;
+    padding: none;
+    width: 100%;
+    background: #b2f56f;
+}
+
+.footertext{
+    text-align: center;
+    padding: none;
+    font-size: 3vh;
+}
+    
+h4{
+	font-family: "Aileron-Ultralight";
+    font-weight: 200;
+    font-size: 4vh;
+    text-align: center;
+    color: #5c7071;
+    text-decoration: underline;
+    padding-top: 5%;
+}
+    
+#footernav{
+	font-family: "Aileron-Ultralight";
+	margin-left: none;
+    color: #5c7071;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#footernav ul li {
+	font-family: "Aileron-Ultralight";
+	list-style-type: none;
+    display: block;
+	padding: 2px;
+    margin: 0 auto;
+}
+
+#footernav ul li a{
+	font-family: "Aileron-Ultralight";
+    color: #000000;
+	font-size: 3vh;
+	text-decoration: none;
+    display: block;
+    color: #969696;
+}
+
+.sectionfooter{
+    display: inline-block;
+    margin: 0 auto;
+    background: #b2f56f;
+    vertical-align: top;
+    width: 30%;
+}
+}
+
+
+/*---------------------------------------------------Portrait Tablet----------------------------------------------------*/
+@media (min-width: 601px) and (max-width: 800px) {
+h1 {
+    color: #ffffff;
+    font-family: "Aileron-SemiBold";
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 2%;
+	font-size: 115pt;
+	text-align: center;
+    text-shadow: 7px 8px 9px #333;
+    filter: drop-shadow(color=#333, offx=2px, offy=2px);
+}
+    
+h2 {
+font-family: "Aileron-Regular";
+    font-weight: 200;
+    font-size: 3em;
+    text-align: center;
+    color: #83e8fa;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+    
+h3{
+	font-family: "Aileron-Ultralight";
+    font-weight: 200;
+    font-size: 5vh;
+    text-align: center;
+    color: #5c7071;
+}
+    
+    p {
+	font-family: "Aileron-Ultralight";
+    /*background: rgba(170, 203, 203, 0.35);*/
+    color: #ffffff;
+    font-weight: 100;
+	font-size: 1.5em;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center
+}
+    
+nav{
+font-family: "Aileron-Regular";
+	margin-left: none;
+    color: #5c7071;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -45vh;
+}
+
+nav ul li {
+font-family: "Aileron-Regular";
+	list-style-type: none;
+    display: inline-block;
+	padding: 6px;
+    margin: 0 auto;
+}
+
+nav ul li a{
+font-family: "Aileron-Regular";
+    color: #000000;
+	font-size: 25pt;
+	text-decoration: none;
+    display: inline-block;
+    color: #83e8fa;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+
+a{
+    font-family: "Aileron-Ultralight";
+    color: #5c7071;
+    text-decoration: none;
+    z-index: 100;
+}
+
+a:active{
+    color: #000000;
+}
+
+a:visited{
+    color: #5c7071;   
+}
+
+#home{
+   background-image: url("../images/background_main_tablet.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+#about {
+    background-image: url("../images/background_about_tablet.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+#map {
+    background-image: url("../images/background_map_tablet.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    text-align:center;
+}
+
+.outline{
+    display: none;
+}
+    
+.mobileoutline{
+    display: block;
+    margin: 0 auto;
+}
+    
+#west{
+   background-image: url("../images/background_about.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#nevada{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#california{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#oregon{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#idaho{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#utah{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#colorado{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#wyoming{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#washington{
+   background-image: url("../images/background_washington.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#montana{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#hawaii{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#alaska{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+        
+/*Midwest Styles*/
+    
+#northdakota{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#southdakota{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#nebraska{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#kansas{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#minnesota{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#iowa{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#missouri{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#wisconsin{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#illinois{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#michigan{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#indiana{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#ohio{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*northeast styles*/
+    
+#newhampshire{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#maine{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#vermont{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newyork{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#massachusetts{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#rhodeisland{
+   background-image: url("../images/background_washington.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#connecticut{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newjersey{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#pennsylvania{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#maryland{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#delaware{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*southeast styles*/
+    
+#westvirginia{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#virginia{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#northcarolina{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#southcarolina{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#delaware{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#kentucky{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#tennessee{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#florida{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#alabama{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#georgia{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#mississippi{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#louisiana{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#arkansas{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*southwest*/
+    
+#arizona{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#oklahoma{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#texas{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newmexico{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+
+#tabletmap{
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+    
+#desktopmap{
+    margin-left:auto;
+    margin-right:auto;
+    display: none;
+}
+    
+#mobilemap{
+    margin-left:auto;
+    margin-right:auto;
+    display: none;
+}
+    
+.states{
+    background: #333333;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.states ul{
+	font-family: "Aileron-Ultralight";
+    font-weight: 300;
+	list-style-type: none;
+	padding:6px;
+    color: #3e3e3e;
+    margin: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 25px;
+}
+
+.states ul li{
+	font-family: "Aileron-Ultralight";
+    font-weight: 300;
+	list-style-type: none;
+	padding:6px;
+    color: #3e3e3e;
+    margin: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 25px;
+}
+    
+.statenav{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+    
+#activities {
+    background-image: url("../images/background_activities_tablet.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 200vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+.sectionarray {
+    width: 70%;
+    padding: none;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    vertical-align: top;
+    padding-top: 70px;
+}
+
+.icons{
+    margin: 0 auto;
+}
+    
+a.button {
+    position: absolute;
+    padding: 20px 20px 20px 20px;
+    margin-left: -50px;
+    color:#5c7071;
+    text-decoration:none;
+    background: -webkit-linear-gradient(#d6ff79, #c3ff63);
+    background: -webkit-linear-gradient(#d6ff79, #c3ff63); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d6ff79, #c3ff63); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d6ff79, #c3ff63); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d6ff79, #c3ff63); /* Standard syntax */
+}
+    
+#quiz1 {
+    background-image: url("../images/background_activities_tablet.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    margin-left:auto;
+    margin-right:auto;
+}
+    
+.question{
+    font-family: "Aileron-Ultralight";
+    color: black;
+}
+
+label{
+    font-family: "Aileron-Ultralight";
+    color: black;
+}
+    
+    #gallery {
+    background-image: url("../images/gallery_background.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 350vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+div#gallerydesktop{
+    display: block;
+    text-align: center;
+}
+    
+div#gallerymobile{
+    display: none; 
+    text-align: center;
+}
+
+    
+#contact{
+    background-image: url("../images/background_contact_tablet.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+footer{
+    background: #b2f56f;
+    height: 60vh;
+    font-family: "Aileron-Ultralight";
+    color: white;
+    width: 100%;
+}
+    
+#copyright{
+    text-align: right;
+    padding: none;
+    background: #b2f56f;
+    width: 100%;
+}
+
+.footertext{
+    text-align: center;
+    padding: none;
+    font-size: 3vh;
+}
+    
+h4{
+	font-family: "Aileron-Ultralight";
+    font-weight: 200;
+    font-size: 4vh;
+    text-align: center;
+    color: #5c7071;
+    text-decoration: underline;
+    padding-top: 5%;
+}
+    
+#footernav{
+	font-family: "Aileron-Ultralight";
+	margin-left: none;
+    color: #5c7071;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#footernav ul li {
+	font-family: "Aileron-Ultralight";
+	list-style-type: none;
+    display: block;
+	padding: 2px;
+    margin: 0 auto;
+}
+
+#footernav ul li a{
+	font-family: "Aileron-Ultralight";
+    color: #000000;
+	font-size: 3vh;
+	text-decoration: none;
+    display: block;
+    color: #969696;
+}
+
+.sectionfooter{
+ background: #b2f56f;   
+}
+    
+}
+
+
+/*---------------------------------------------------Horizontal Tablet------------------------------------------------------*/
+@media (min-width: 801px) and (max-width: 1300px) {
+h1 {
+    color: #ffffff;
+    font-family: "Aileron-SemiBold";
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+	font-size: 150pt;
+	text-align: center;
+    text-shadow: 7px 8px 9px #333;
+    filter: drop-shadow(color=#333, offx=2px, offy=2px);
+}
+    
+h2 {
+font-family: "Aileron-Regular";
+    font-weight: 200;
+    font-size: 3em;
+    text-align: center;
+    color: #83e8fa;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+    
+h3{
+	font-family: "Aileron-Ultralight";
+    font-weight: 200;
+    font-size: 5vh;
+    text-align: center;
+    color: #5c7071;
+}
+    
+    p {
+	font-family: "Aileron-Ultralight";
+    /*background: rgba(170, 203, 203, 0.35);*/
+    color: #ffffff;
+    font-weight: 100;
+	font-size: 1.5em;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center
+}
+    
+nav{
+font-family: "Aileron-Regular";
+	margin-left: none;
+    color: #5c7071;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -45vh;
+}
+
+nav ul li {
+font-family: "Aileron-Regular";
+	list-style-type: none;
+    display: inline-block;
+	padding: 6px;
+    margin: 0 auto;
+}
+
+nav ul li a{
+font-family: "Aileron-Regular";
+    color: #000000;
+	font-size: 25pt;
+	text-decoration: none;
+    display: inline-block;
+    color: #83e8fa;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+
+a{
+    font-family: "Aileron-Ultralight";
+    color: #5c7071;
+    text-decoration: none;
+    z-index: 100;
+}
+
+a:active{
+    color: #000000;
+}
+
+a:visited{
+    color: #5c7071;   
+}
+
+#home{
+   background-image: url("../images/background_main_tablet.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+#about {
+    background-image: url("../images/background_about_tablet.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+#map {
+    background-image: url("../images/background_map_tablet.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    text-align:center;
+}
+    
+.outline{
+    display: block;
+    float: left;
+}
+    
+.mobileoutline{
+    display: none;
+    float: left;
+}
+
+#desktopmap{
+    margin-left:auto;
+    margin-right:auto;
+    display: none;
+}
+
+#tabletmap{
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+   
+#mobilemap{
+    margin-left:auto;
+    margin-right:auto;
+    display: none;
+}
+    
+#west{
+   background-image: url("../images/background_about.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#nevada{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#california{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#oregon{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#idaho{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#utah{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#colorado{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#wyoming{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#washington{
+   background-image: url("../images/background_washington.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#montana{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#hawaii{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#alaska{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+        
+/*Midwest Styles*/
+    
+#northdakota{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#southdakota{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#nebraska{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#kansas{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#minnesota{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#iowa{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#missouri{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#wisconsin{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#illinois{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#michigan{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#indiana{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#ohio{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*northeast styles*/
+    
+#newhampshire{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#maine{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#vermont{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newyork{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#massachusetts{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#rhodeisland{
+   background-image: url("../images/background_washington.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#connecticut{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newjersey{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#pennsylvania{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#maryland{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#delaware{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*southeast styles*/
+    
+#westvirginia{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#virginia{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#northcarolina{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#southcarolina{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#delaware{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#kentucky{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#tennessee{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#florida{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#alabama{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#georgia{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#mississippi{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#louisiana{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#arkansas{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*southwest*/
+    
+#arizona{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#oklahoma{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#texas{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newmexico{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+.states{
+    background: #333333;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.states ul{
+	font-family: "Aileron-Ultralight";
+    font-weight: 300;
+	list-style-type: none;
+	padding:6px;
+    color: #3e3e3e;
+    margin: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 25px;
+}
+
+.states ul li{
+	font-family: "Aileron-Ultralight";
+    font-weight: 300;
+	list-style-type: none;
+	padding:6px;
+    color: #3e3e3e;
+    margin: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 25px;
+}
+    
+.statenav{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+    
+#activities {
+    background-image: url("../images/background_activities_tablet.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 180vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+.sectionarray {
+    width: 80%;
+    padding: none;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    vertical-align: top;
+    padding-top: 70px;
+}
+
+.icons{
+    margin: 0 auto;
+}
+    
+a.button {
+    position: absolute;
+    padding: 20px 20px 20px 20px;
+    margin-left: -50px;
+    color:#5c7071;
+    text-decoration:none;
+    background: -webkit-linear-gradient(#d6ff79, #c3ff63);
+    background: -webkit-linear-gradient(#d6ff79, #c3ff63); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d6ff79, #c3ff63); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d6ff79, #c3ff63); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d6ff79, #c3ff63); /* Standard syntax */
+}
+    
+#quiz1 {
+    background-image: url("../images/background_activities.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    margin-left:auto;
+    margin-right:auto;
+}
+    
+.question{
+    font-family: "Aileron-Ultralight";
+    color: black;
+}
+
+label{
+    font-family: "Aileron-Ultralight";
+    color: black;
+}
+    
+        
+    #gallery {
+    background-image: url("../images/gallery_background.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+div#gallerydesktop{
+    display: none;
+    text-align: center;
+}
+    
+div#gallerymobile{
+    display: block; 
+    text-align: center;
+}    
+    
+    
+#contact{
+    background-image: url("../images/background_contact_tablet.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+footer{
+    background: #b2f56f;
+    height: 40vh;
+    font-family: "Aileron-Ultralight";
+    color: white;
+}
+    
+#copyright{
+    text-align: center;
+    padding: none;
+    width: 100%;
+    background: #b2f56f;
+}
+
+.footertext{
+    text-align: center;
+    padding: none;
+    font-size: 3vh;
+}
+    
+h4{
+	font-family: "Aileron-Ultralight";
+    font-weight: 200;
+    font-size: 4vh;
+    text-align: center;
+    color: #5c7071;
+    text-decoration: underline;
+    padding-top: 5%;
+}
+    
+#footernav{
+	font-family: "Aileron-Ultralight";
+	margin-left: none;
+    color: #5c7071;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#footernav ul li {
+	font-family: "Aileron-Ultralight";
+	list-style-type: none;
+    display: block;
+	padding: 2px;
+    margin: 0 auto;
+}
+
+#footernav ul li a{
+	font-family: "Aileron-Ultralight";
+    color: #000000;
+	font-size: 3vh;
+	text-decoration: none;
+    display: block;
+    color: #969696;
+}
+    
+.sectionfooter{
+ background: #b2f56f;   
+}
+    
+}
+
+/*--------------------------------------------------------------mobile---------------------------------------------------------*/
+
+@charset "UTF-8";
+@media (max-width: 600px) {
+
+    
+h1 {
+    color: #ffffff;
+    font-family: "Aileron-SemiBold";
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    padding-bottom: 0;
+	font-size: 50pt;
+	text-align: center;
+    text-shadow: 7px 8px 9px #333;
+    filter: drop-shadow(color=#333, offx=2px, offy=2px);
+}
+    
+h2 {
+font-family: "Aileron-Regular";
+    font-weight: 200;
+    font-size: 3em;
+    text-align: center;
+    color: #83e8fa;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+    
+h3{
+	font-family: "Aileron-Ultralight";
+    font-weight: 200;
+    font-size: 5vh;
+    text-align: center;
+    color: #fff;
+}
+    
+nav{
+font-family: "Aileron-Regular";
+	margin-left: none;
+    color: #5c7071;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -45vh;
+}
+
+nav ul li {
+font-family: "Aileron-Regular";
+	list-style-type: none;
+    display: inline-block;
+	padding: 6px;
+    margin: 0 auto;
+}
+
+nav ul li a{
+font-family: "Aileron-Regular";
+    color: #000000;
+	font-size: 17pt;
+	text-decoration: none;
+    display: inline-block;
+    color: #83e8fa;
+    text-shadow: 3px 3px 5px #333;
+    filter: drop-shadow(color=#333, offx=1px, offy=1px);
+}
+
+a{
+    font-family: "Aileron-Ultralight";
+    color: #5c7071;
+    text-decoration: none;
+    z-index: 100;
+}
+
+a:active{
+    color: #000000;
+}
+
+a:visited{
+    color: #5c7071;   
+}
+    
+p {
+	font-family: "Aileron-Ultralight";
+    /*background: rgba(170, 203, 203, 0.35);*/
+    color: #ffffff;
+    font-weight: 100;
+	font-size: 1em;
+    width: 100%;
+    margin: 0 auto;
+    width: 80%;
+}
+    
+    #home{
+   background-image: url("../images/background_main_mobile.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+    #about {
+    background-image: url("../images/background_about_mobile.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+    #map {
+    background-image: url("../images/background_map_mobile.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    text-align:center;
+}
+    
+.outline{
+    display: none;
+}
+    
+.mobileoutline{
+    display: block;
+    margin: 0 auto;
+}
+    
+#west{
+   background-image: url("../images/background_about.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#nevada{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#california{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#oregon{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#idaho{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#utah{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#colorado{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#wyoming{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#washington{
+   background-image: url("../images/background_washington.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#montana{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#hawaii{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#alaska{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+        
+/*Midwest Styles*/
+    
+#northdakota{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#southdakota{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#nebraska{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#kansas{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#minnesota{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#iowa{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#missouri{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#wisconsin{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#illinois{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#michigan{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#indiana{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#ohio{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*northeast styles*/
+    
+#newhampshire{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#maine{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#vermont{
+   background-image: url("../images/background_california.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newyork{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#massachusetts{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#rhodeisland{
+   background-image: url("../images/background_washington.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#connecticut{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newjersey{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#pennsylvania{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#maryland{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#delaware{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*southeast styles*/
+    
+#westvirginia{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#virginia{
+   background-image: url("../images/background_montana.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#northcarolina{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#southcarolina{
+   background-image: url("../images/background_oregon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#delaware{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#kentucky{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#tennessee{
+   background-image: url("../images/background_idaho.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#florida{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#alabama{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#georgia{
+   background-image: url("../images/background_utah.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#mississippi{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#louisiana{
+   background-image: url("../images/background_nevada.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#arkansas{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+/*southwest*/
+    
+#arizona{
+   background-image: url("../images/background_hawaii.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#oklahoma{
+   background-image: url("../images/background_colorado.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#texas{
+   background-image: url("../images/background_alaska.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+#newmexico{
+   background-image: url("../images/background_wyoming.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 0px; 
+}
+    
+.states{
+    background: #333333;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.states ul{
+	font-family: "Aileron-Ultralight";
+    font-weight: 300;
+	list-style-type: none;
+	padding:6px;
+    color: #3e3e3e;
+    margin: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 25px;
+}
+
+.states ul li{
+	font-family: "Aileron-Ultralight";
+    font-weight: 300;
+	list-style-type: none;
+	padding:6px;
+    color: #3e3e3e;
+    margin: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 25px;
+}
+    
+.statenav{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+    
+#desktopmap{
+    margin-left:auto;
+    margin-right:auto;
+    display: none;
+}
+
+#tabletmap{
+    margin-left:auto;
+    margin-right:auto;
+    display: none;
+}
+    
+#mobilemap{
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+    
+    #activities {
+    background-image: url("../images/background_activities_mobile.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 230vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+#quiz1 {
+    background-image: url("../images/background_activities_mobile.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    margin-left:auto;
+    margin-right:auto;
+}
+    
+.sectionarray {
+    width: 80%;
+    padding: none;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    vertical-align: top;
+    padding-top: 70px;
+}
+
+.icons{
+    margin: 0 auto;
+}
+    
+a.button {
+    position: absolute;
+    padding: 20px 20px 20px 20px;
+    margin-left: -50px;
+    color:#5c7071;
+    text-decoration:none;
+    background: -webkit-linear-gradient(#d6ff79, #c3ff63);
+    background: -webkit-linear-gradient(#d6ff79, #c3ff63); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d6ff79, #c3ff63); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d6ff79, #c3ff63); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d6ff79, #c3ff63); /* Standard syntax */
+}
+        
+    #gallery {
+    background-image: url("../images/gallery_background.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 200vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+    
+div#gallerydesktop{
+    display: none;
+    text-align: center;
+}
+    
+div#gallerymobile{
+    display: block; 
+    text-align: center;
+}
+    
+    #contact{
+    background-image: url("../images/background_contact_mobile.jpg");
+    padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+table {
+	font-family: "Aileron-Ultralight";
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+#contactBlock{
+	font-family: "Aileron-Ultralight";
+    text-align: center;
+    float: right;
+}
+
+#htmlform{
+    font-family: "Aileron-Ultralight";
+    text-align: center;
+    float: right;
+}
+
+#textfield{
+    float: right;
+    font-family: "Aileron-Ultralight";
+}
+
+label{
+font-family: "Aileron-Ultralight";
+
+}
+
+section p {
+    padding: 10px;
+}
+
+footer{
+    background: #b2f56f;
+    height: 60vh;
+    font-family: "Aileron-Ultralight";
+    color: white;
+}
+    
+#copyright{
+    text-align: right;
+    padding: none;
+    background: #b2f56f;
+    width: 100%;
+}
+
+.footertext{
+    text-align: center;
+    padding: none;
+    font-size: 3vh;
+    background: #b2f56f;
+}
+    
+h4{
+	font-family: "Aileron-Ultralight";
+    font-weight: 200;
+    font-size: 4vh;
+    text-align: center;
+    color: #5c7071;
+    text-decoration: underline;
+    padding-top: 5%;
+}
+    
+#footernav{
+	font-family: "Aileron-Ultralight";
+	margin-left: none;
+    color: #5c7071;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#footernav ul li {
+	font-family: "Aileron-Ultralight";
+
+	list-style-type: none;
+    display: block;
+	padding: 2px;
+    margin: 0 auto;
+}
+
+#footernav ul li a{
+	font-family: "Aileron-Ultralight";
+
+    color: #000000;
+	font-size: 3vh;
+	text-decoration: none;
+    display: block;
+    color: #969696;
+}
+    
+.sectionfooter{
+ background: #b2f56f;   
+}
+        
+	}
