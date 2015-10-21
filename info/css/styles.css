@@ -132,7 +132,7 @@ h2 {
 h3{
     font-family: 'Overpass';
 	font-size: 2em;
-    color: #ffffff;
+    color: #000000;
     padding: 20px;
 }
 
@@ -140,14 +140,20 @@ p {
 	font-family: 'Lato', sans-serif;
     font-weight: 100;
 	font-size: 2em;
-    color: #ffffff;
+    color: #000000;
     letter-spacing: 2px;
     margin-left: 30px;
+    line-height: 50px;
 }
     
 a{
     color: #ffffff;
     text-decoration: none;
+}
+    
+a.obviouslinks{
+    color: #000000;
+    text-decoration: underline;
 }
 
 nav{
@@ -185,6 +191,18 @@ section{
     
 #home{
     background-image: url("../images/bg.jpg");
+}
+    
+div#profile{
+    text-align: center;
+}
+    
+#chang{
+    height: 300vh;
+}
+    
+.video{
+    text-align: center;
 }
     
 /*------------------------------------FOOTER--------------------------------------*/
