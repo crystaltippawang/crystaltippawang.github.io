@@ -108,6 +108,7 @@ header {
     
 /*------------------------------------TYPOGRAPHY--------------------------------------*/
     
+/*font-family: 'Lato', sans-serif;*/
 @font-face{
     font-familY: "Overpass";
     src: url("../assets/overpass-regular.ttf");
@@ -126,7 +127,7 @@ a{
 }
 
 nav{
-    font-family: 'Lato', sans-serif;
+    font-familY: "Overpass";
     color: #ffffff;
     text-align: center;
     margin: 0 auto;
@@ -135,7 +136,7 @@ nav{
 }
 
 nav ul li {
-    font-family: 'Lato', sans-serif;
+    font-familY: "Overpass";
 	list-style-type: none;
     display: inline-block;
 	padding: 10px;
@@ -144,7 +145,7 @@ nav ul li {
 }
 
 nav ul li a{
-    font-family: 'Lato', sans-serif;
+    font-familY: "Overpass";
     color: #000000;
 	font-size: 20pt;
 	text-decoration: none;
